@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column; /* Alinhamento vertical */
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    display: grid; 
+    align-items: center;
+    padding-bottom: 40px; 
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contato{
+    width: 300px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Conteúdo principal */
+.content {
+    width: 100%;
+    text-align: center; /* Centralizar o conteúdo para tela de PC */
+    padding: 20px;
+}
+
+header {
+    padding: 30px 0;
+}
+
+header .logo {
+    width: 150px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Força o conteúdo a ser disposto em coluna (verticalmente) */
+    align-items: center; 
+
+}
+
+.text-overlay {
+    position: relative;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+header h1 .highlight {
+    color: #0ead65;
+}
+
+header h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #0ead65;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+header p {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+/* Seção de Preços */
+.pricing {
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centralizar botões */
+}
+
+.pricing button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    transition: background-color 0.3s ease;
+    width: 300px; /* Garantir a mesma largura para ambos os botões */
+}
+
+.pricing .btn-combo {
+    background-color: #0ead65;
+    color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.pricing .btn-combo:hover {
+    background-color: #089e59;
+}
+
+.pricing .btn-devflix {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.pricing .btn-devflix:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.pricing p {
+    font-size: 0.9em;
+    color: #b0b0b0;
+    text-align: center;
+}
+
+/* Seção de Imagem (agora abaixo do conteúdo) */
+.image-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.profiles {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to right, transparent, #000000 10%, #000000 90%, transparent);
+}
+
+.profiles .profile {
+    width: 100%;
+    max-width: 600px; /* Limita o tamanho da imagem */
+    height: auto;
+    object-fit: cover;
+}
+
+/* Footer */
+.footer {
+    margin-top: 250px;
+    font-size: 0.8em;
+    color: #666;
+    text-align: center;
+    width: 100%;
+}
+
+/* Seção de Assinatura (em uma coluna para telas maiores) */
+.secao-combo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.texto-combo {
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.texto-combo p {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.botao-assine {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #0ead65;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-assine:hover {
+    background-color: #089e59;
+}
+
+/* Seção de Imagens do Combo */
+.imagens-combo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Seção de Cursos */
+.cursos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.texto-curso {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.texto-curso h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.texto-curso p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Seção de Usuários */
+.usuarios {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.usuarios h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.dispositivos {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Define o espaçamento entre os ícones */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    padding: 20px 0; /* Adiciona espaçamento superior e inferior */
+}
+
+.dispositivo {
+    text-align: center;
+}
+
+.dispositivo img {
+    height: 100px; /* Define um tamanho apropriado para as imagens */
+    width: auto; /* Mantém a proporção das imagens */
+    margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+.dispositivo p {
+    font-size: 1.2em; /* Ajusta o tamanho da fonte para o texto */
+    color: #fff; /* Cor branca para o texto */
+}
+
+
+/* Seção de Contato */
+.ultima {
+    width: 100%;
+    padding: 40px;
+}
+
+.ultima .container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.ultima form {
+    display: flex;
+    flex-direction: column;
+}
+
+.ultima input,
+.ultima textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    color: #000;
+}
+
+.ultima button {
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #0ead65;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.ultima button:hover {
+    background-color: #089e59;
+}
